@@ -1,4 +1,4 @@
-// git hub code link
+// https://github.com/faysal909/javascript
 //convert kilometer to meter
 function kilometerToMeter(kilometer){
     if(kilometer<0){
