@@ -4,8 +4,10 @@ function kilometerToMeter(kilometer){
     if(kilometer<0){
         return console.log("distance can not be negative . please input a vaild number of kilometer")
     }
+    
     var meter= kilometer*1000;
     return meter;
+    
 }
 //console.log(kilometerToMeter(-5));
 
@@ -45,7 +47,7 @@ function hotelCost(day){
 // find the lagest name of my friend list
 function megaFriend(arr){
     var longest = arr[0];
-    for (i = 0; i < arr.length; i++) {
+    for (i=0; i<arr.length; i++) {
       if (arr[i].length > longest.length) {
         longest = arr[i];
       }
@@ -53,4 +55,4 @@ function megaFriend(arr){
     return longest;
 }
 
-console.log(megaFriend(arr=['rana','faysal', 'roni']));
+//console.log(megaFriend(arr=['rana','faysal', 'roni','Rahim']));
