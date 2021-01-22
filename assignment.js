@@ -22,7 +22,7 @@ function budgetCalculator( watch,phone,laptop){
     return totalcost;
     
 }
-console.log(budgetCalculator(2,0,-1));
+//console.log(budgetCalculator(2,0,-1));
 
 //hostel cost calculation 
 function hotelCost(day){
@@ -43,9 +43,14 @@ function hotelCost(day){
 //console.log(hotelCost(25));
 
 // find the lagest name of my friend list
-function megaFriend(ar){
-    
+function megaFriend(arr){
+    var longest = arr[0];
+    for (i = 0; i < arr.length; i++) {
+      if (arr[i].length > longest.length) {
+        longest = arr[i];
+      }
+    } 
+    return longest;
 }
 
-var ar=['rana','faysal', 'roni']
-//console.log(ar);
+console.log(megaFriend(arr=['rana','faysal', 'roni']));
