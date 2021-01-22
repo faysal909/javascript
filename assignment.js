@@ -1,19 +1,30 @@
+// git hub code link
+//convert kilometer to meter
 function kilometerToMeter(kilometer){
     if(kilometer<0){
-        console.log("distance can not be negative . please input a vaild number of kilometer")
+        return console.log("distance can not be negative . please input a vaild number of kilometer")
     }
     var meter= kilometer*1000;
     return meter;
 }
-//console.log(kilometerToMeter(15.5));
+//console.log(kilometerToMeter(-5));
+
+// budget calculation
 function budgetCalculator( watch,phone,laptop){
-    var watchCost= watch*50;
+    if(watch<0 || phone<0 || laptop<0){
+        return console.log ("you inpute invalid format of quantitiy. please check it !")
+    }
+    
+    var WatchCost= watch*50;
     var PhoneCost=phone*100;
     var LaptopCost=laptop*500;
-    var totalcost= watchCost+PhoneCost+ LaptopCost;
+    var totalcost= WatchCost + PhoneCost + LaptopCost;
     return totalcost;
+    
 }
-//console.log(budgetCalculator(2,8,1));
+console.log(budgetCalculator(2,0,-1));
+
+//hostel cost calculation 
 function hotelCost(day){
     var total_cost=0;
     if(day<=10){
@@ -30,6 +41,11 @@ function hotelCost(day){
    return total_cost;
 }
 //console.log(hotelCost(25));
-function megaFriend(){
 
+// find the lagest name of my friend list
+function megaFriend(ar){
+    
 }
+
+var ar=['rana','faysal', 'roni']
+//console.log(ar);
